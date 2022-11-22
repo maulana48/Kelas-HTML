@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+}
+
+#tabel-siswa {
+    border-collapse: collapse;
+    background-image: url(./data.drawio\(1\).png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+#tabel-siswa h3 {
+    font-size: 32px;
+}
+
+#tabel-siswa td {
+    padding: 20px;
+}
+
+.link {
+    color: red;
+    text-decoration: none;
+}

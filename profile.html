@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1,
+        h2,
+        h4,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            border: 1px solid black;
+            max-width: 400px;
+            height: 100%;
+            padding-bottom: 40px;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .header .backimg {
+            background-image: url(./data.drawio\(1\).png);
+            height: 100px;
+            width: 100%;
+        }
+
+        h4 {
+            color: grey;
+        }
+
+        .header img {
+            border-radius: 999px;
+            border: 2px solid white;
+            max-width: 100px;
+            margin-top: -60px;
+        }
+
+        .header button {
+            background-color: blue;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .items {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="header">
+            <div class="backimg"></div>
+            <img src="" alt="">
+            <h2></h2>
+            <h4>Surabaya</h4>
+            <button>Follow</button>
+        </div>
+        <div class="items">
+            <div class="item">
+                <h4>followers</h4>
+                <h1>5000</h1>
+            </div>
+            <div class="item">
+                <h4>project</h4>
+                <h1>142</h1>
+            </div>
+            <div class="item">
+                <h4>renks</h4>
+                <h1>28</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = [{
+                'nama': 'Bayu',
+                'asal': 'Surabaya',
+                'img': './1.png',
+            },
+            {
+                'nama': 'Mawar',
+                'asal': 'Pemalang',
+                'img': './2.png',
+            },
+            {
+                'nama': 'bunga',
+                'asal': 'Semarang',
+                'img': './3.png',
+            },
+        ];
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const id = urlParams.get('id') - 1;
+
+        const header = document.querySelector('.header');
+
+        let value = header.querySelector('h2');
+        value.innerText = data[id].nama;
+
+        value = header.querySelector('h4');
+        value.innerText = data[id].asal;
+
+        value = header.querySelector('img');
+        value.src = data[id].img;
+
+        const items = document.querySelector('.items');
+
+        let item = items.querySelector('div:first-of-type');
+        value = item.querySelector('h1');
+        let random = Math.floor(Math.random() * 5000);
+        value.innerText = random;
+
+        item = items.querySelector('div:nth-child(2)');
+        value = item.querySelector('h1');
+        random = Math.floor(Math.random() * 200);
+        value.innerText = random;
+
+        item = items.querySelector('div:nth-child(3)');
+        value = item.querySelector('h1');
+        random = Math.floor(Math.random() * 50);
+        value.innerText = random;
+    </script>
+</body>
+
+</html>
