@@ -1,45 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="./style.css">
+    <title>Daftar Siswa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <table border="1" id="tabel-siswa">
-        <tr>
-            <th colspan="4">Daftar siswa</th>
-        </tr>
-        <tr>
-            <th>No</th>
-            <th>Foto</th>
-            <th width="400">Siswa</th>
-            <th>Detail</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td><img src="./1.PNG" alt="" width="100px"></td>
-            <td>Bayu</td>
-            <td><a href="./profile.html?id=1" target="_blank" class="link">Detail</a></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><img src="./2.PNG" alt="" width="100px"></td>
-            <td>Mawar</td>
-            <td><a href="./profile.html?id=2" target="_blank" class="link">Detail</a></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><img src="./3.PNG" alt="" width="100px"></td>
-            <td>Bunga</td>
-            <td><a href="./profile.html?id=3" target="_blank" class="link">Detail</a></td>
-        </tr>
-    </table>
+    <div id="header" class="wrapper">
+        <div class="container">
+            <div class="logo">
+                <img src="jong_koding_logo.png" alt="" width="500" height="300">
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sidebar">
+                <div class="recent-article">
+                    <h2>Terbaru</h2>
+                    <ul>
+                        <li><a href="#">Bersepeda Di Tengah Pandemi</a></li>
+                        <li><a href="#">Solusi Work From Home Tetap Produktif</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="blog-content">
+                    <div class="image-box">
+                        <img src="https://i.pravatar.cc/500?img=4" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h2>-Bersepedah Di Tengah Pandemie</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do etusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minin ven iam
+                        </p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="image-box">
+                        <img src="https://i.pravatar.cc/1000?img=3" alt="">
+                    </div>
+                    <div class="text-box">
+                        <h2>Solusi Work From Home Tetap Produktif</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua. Ut en im ad minim ven iam</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <table border=" 1" align="center" id="table-siswa">
+                    <tr>
+                        <th colspan="4">
+                            <h3>Daftar Siswa</h3>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>No</th>
+                        <th>Foto</th>
+                        <th width="400">Siswa</th>
+                        <th>Detail</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="https://i.pravatar.cc/158?img=8"></td>
+                        <td>Budi</td>
+                        <td><a href="#" class="link">Detail</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="https://i.pravatar.cc/150?img=36"></td>
+                        <td>Mawar</td>
+                        <td><a href="#" class="link">Detail</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img src="https://i.pravatar.cc/150?img=31"></td>
+                        <td>Bunga</td>
+                        <td><a href="#" class="link">Detail</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
 </body>
 
 </html>
